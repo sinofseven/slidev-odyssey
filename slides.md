@@ -12,12 +12,12 @@ defaults:
 
 <div class="flex items-center justify-center h-full">
   <div>
-    <div class="text-black font-bold text-[60px]">ここに<br />タイトルです</div>
+    <div class="text-black font-bold text-[60px]">始めてAWSを触ってからどうやって勉強してきたかを振り返ります</div>
   </div>
 
   <div class="font-bold text-black absolute bottom-[80px] text-[24px]">
-    <div>2024.7.1</div> 
-    <div>部署部署部署 氏名氏名氏名</div>
+    <div>2024.6.28</div> 
+    <div>製造ビジネステクノロジー部 夏目祐樹</div>
   </div>
 </div>
 
@@ -25,47 +25,311 @@ defaults:
 
 # 自己紹介
 
-- こんにちは
-- こんにちは
-- こんにちは
+- 夏目 祐樹 (ナツメ ユウタ)
+- 製造ビジネステクノロジー部 自称サーバーレスエンジニア
+- 好きなAWSサービス
+  - Lambda, SQS, DynamoDB
+- 近況
+  - お仕事忙しい
+  - FF14: 今日から新パッケージのアーリーアクセス開始 (GA: 07/02)
+  - 読書用にPixel Tablet買った
 
 ---
 
-# 画像の例
+# 話すこと
 
-- 画像の例
+- 来歴 
+- 勉強方法
 
-<div class="flex items-center gap-[8px] mt-[20px] container">
-  <img src="/link-card_1.png" class="h-[130px]">
-  <div>➡️</div>
-  <img src="/link-card_2.png" class="h-[130px]">
+---
+
+# 来歴 (1) 2015/11/03
+
+- JAWS Festa Kyushu 2015
+- ここで始めてAWSを触った
+  - Lambdaのハンズオンのためにアカウント作成
+
+---
+
+# 来歴 (2) 2015年 12月ごろ
+
+- JAWS UG 福岡
+- 飛び込みLT
+  - 自作のCGIをサーバーレス実装しようとしてみる
+  - 最後に「こんなの作りたいけど何か良い方法ある?」と質問した記憶がある
+
+---
+
+# 来歴 (3) 2016年 〜
+
+- 勉強会に参加したり、色々作ったりした
+- JAWS UG 福岡では最初のLTの続きものでLTや登壇した
+
+---
+layout: image
+image: maniaimasendeshita.png
+---
+
+---
+
+# 来歴 (3) 2016年 〜
+
+- それだけだとLTも登壇ももたないので、 <br />
+  作るために調べたこと試したことを話した
+- 結果「できませんでした」が持ちネタの一つになった
+
+---
+
+# 来歴 (4) 2017年10月くらい 〜 2017年3月
+
+- 何かの勉強会の懇親会で田中さんにクラスメソッドに誘われる
+- 当時サーバーレス開発部ができたとか、<br>福岡オフィスができるなどがあって転職を決める
+
+---
+
+# 来歴 (5) CM入社 
+
+- クラスメソッドに転職してサーバーレスのお仕事を始める
+- 始めて入った案件では既に動くコードがあったので読み込んで勉強
+  - 初めて使うサービス多数
+  - AWS関連のテストコードの書き方
+  - Serverless Application Model (SAM)
+
+---
+
+# 来歴 (6) CM入社後
+
+- AWSの資格取得を少しやった
+  - 当時福岡オフィスで若干流行ってたのもあった
+- はじめの頃はまわりの人に教えてもらったりもした
+- 今はほとんど有効期限が切れてる
+
+---
+
+# 来歴 (7) 2017年12月ごろ
+
+- re:Inventの記事がDevelopersIOに大量に書かれる
+  - 自分は行っていない
+- 新サービスの発表や既存のサービスのアップデートなどが多数
+  - 今までより多くのことを知ることができた
+
+---
+
+# やってきた勉強法まとめ
+
+- 情報収集
+- 作ってみる
+- 登壇してみる
+- コードを読む
+- AWSの資格勉強
+
+---
+
+# 情報収集 (1)
+
+- まずは広く浅く、情報を集める
+  - AWSは400以上サービスがあるので、<br />
+    「一つを覚えてから次」とかやってたら時間がいくらあっても足りない
+- 主観において知らないものは存在しないものと同義なので、<br />
+  名前とどんなことができるのか程度を覚えておけばいい
+  - 必要になったときに深くしらべればいい
+
+---
+
+# 情報収集 (2) 
+
+- 手軽なのはネットをあさる
+- IT系のニュースサイトとかまとめサイトでも良い
+- 自分がよく見るところでは、
+  - DevelopersIO
+  - Public Key
+  - Tech Feed
+
+---
+
+# 情報収集 (3)
+
+- 勉強会に参加してみる
+- JAWS UG以外でもAWSの話を聞けることもある
+- JAWS UGではエリア支部の他に、目的別の専門支部がある
+  - 初心者支部, CLI専門支部, Security-JAWS, など
+
+---
+
+# 情報収集 (4)
+
+- AWSに関係する本もあるので買って読むのも良いかもしれない
+- 市販の本の他に同人誌もいいのが転がってたりする
+  - 狭く深い内容ではあるが「AWS IAMのマニアックな話」は有名
+
+---
+
+# 作ってみる (1)
+
+- 作って、運用して初めて見えてくるものもある
+- 不便に思ったことを解決するツールを自分は作ってきた
+- 最初はマネジメントコンソールをぽちぽちしながら作ればいい
+  - IaCやCI/CDは慣れてからで十分
+
+---
+
+# 作ってみる (2)
+
+- 個人的なツールやアプリを作るのをオススメしたい
+- 責任をもたなくても大丈夫
+  - 最悪投げ出せる
+- 色々試すことができる
+  - ツール, 言語, 書き方
+
+---
+
+# 作ってみる (3)
+
+- 料金体系は注意しないと危ない
+  - 使った量での課金なのか
+  - リソースが存在している期間の課金なのか
+
+---
+
+# 作ってみる (4)
+
+- 例として自分の作ったもの (1)
+  - Qiitaの記事をダウンロードしてS3に保存するツール
+    - 前職の客先常駐してたときに作った
+    - 客先のネットワークでQiitaがブロックされていたから
+    - 記事のURLを投げて、API経由で記事を取得、S3に保存
+
+---
+
+# 作ってみる (5)
+
+- 例として自分の作ったもの (2)
+  - bookmarkletでbookmarkを管理するツール
+    - PCとスマホ両方から使えるものが欲しかった
+    - 過去2, 3回作った
+    - 次のバージョンも企画だけして止まってる
+
+---
+
+# 作ってみる (6)
+
+- 例として自分の作ったもの (3)
+  - AssumeRole用のCLI Tool
+    - MFA(TOTP)を自動で入力してくれる部分まで作り込んだ
+    - CLI ToolをRustで書くことを試した回
+
+---
+
+# 登壇してみる (1)
+
+- 個人的には一番オススメ
+- セッションでもLTでもいい
+- 作ってみたものについて語ってもいいし、<br />
+  あるサービスについて調べたことを話してもいい
+- 初心者でも気にしないで大丈夫
+  - こんなの作りたいけど、何か良い方法ある?と質問してみてもいい
+
+---
+
+# 登壇してみる (2)
+
+- オススメしたい理由
+  - 何をしているのか、何に興味があるのかを知ってもらえる
+    - 参加して懇親会に行くだけよりも覚えてもらえる
+    - 知ってもらえるから、情報が向こうからやってくることがある
+
+---
+
+# コードを読む
+
+- 読むコードがないと難しいので、ちょっとキツいかもしれない
+- ただ、自分としては一番勉強になった
+- Githubなどで公開されてるアプリやツールもあるので、<br />
+  探し出せば読めると思う
+
+---
+
+# AWSの資格勉強 (1)
+
+<div class="flex gap-[8px] mt-[20px]" style="justify-content: space-between">
+  <div>
+    <ul>
+      <li>AWS Certificates</li>
+      <li>オンラインや全国のテストセンターで受けることができる</li>
+      <li>体系的に勉強するには良いと思う</li>
+      <li>試験を受けなくて、<br />勉強だけでもいいとは思う</li>
+    </ul>
+  </div>
+  <img src="/aws_certificates.png" class="h-[400px]" alt="">
 </div>
 
 ---
 
-# 箇条書きじゃない文字
+# AWSの資格勉強 (2)
 
-<div class="container">こんにちは</div>
-
----
-
-# コードを貼り付ける
-
-- `npm i open-graph-scraper`
-- 使い方の例
-  ```ts
-  const ogs = require('open-graph-scraper');
-  const options = { url: 'http://ogp.me/' };
-  const data = await ogs(options)
-  const { error, html, result, response } = data;
-  console.log('error:', error);  // This returns true or false. True if there was an error. The error itself is inside the result object.
-  console.log('html:', html); // This contains the HTML of page
-  console.log('result:', result); // This contains all of the Open Graph results
-  console.log('response:', response); // This contains response from the Fetch API
-  ```
+<div class="flex" style="justify-content: center">
+  <img src="/amazon_book_aws_cert.png" class="h-[400px]" alt="" />
+</div>
 
 ---
 
-# 参考
+# AWSの資格勉強 (3)
 
-- [クラスメソッド株式会社](https://classmethod.jp/)
+- 個人的にオススメな資格 (1)
+  - AWS Certified Solutions Architect - Associate
+    - 比較的広く薄く勉強できる
+
+---
+
+# AWSの資格勉強 (4)
+
+- 個人的にオススメな資格 (2)
+  - AWS Certified Security - Specialty
+    - AWSをセキュアに使っていくための知識を付けられる
+      - AWSを使うのならほぼ必須の知識じゃないかと思ってる
+    - Specialityなので、専門分野とはいえ初心者には難しいかも
+
+---
+
+# 勉強法まとめ
+
+- 情報収集: 広く浅くまずは知ること
+- 作ってみる: 不便なことを解決するツールなど
+- 登壇してみる: 作った物、調べたことを話すと良い
+- コードを読む: 色々難しいけど、自分は一番勉強になった
+- AWSの資格勉強: 体系的に勉強できる。Security Specialityオススメ
+
+---
+
+# おまけ (1)
+
+- AWS CLI、黒い画面に慣れましょう
+  - AWSを学ぶ上でAWS CLIを使うことも良いと思います
+  - IaCをやる際に、設定値を調べる際によく使います
+    - CloudFormationやSAMではAWS CLIで取得した設定値と同じ名前のことが多い
+  - CloudShellというものを使うと、マネジメントコンソール上でAWS CLIを使うことができます
+
+---
+
+# おまけ (1)
+
+<div class="flex" style="justify-content: center">
+  <img src="/cloud_shell.png" alt="" />
+</div>
+
+---
+
+# おまけ (2)
+
+- ルートアカウントのセキュリティには注意しましょう
+  - emailとpasswordでAWSにログインできるルートアカウントというものがあります
+  - これは最上位の権限を持つので乗っ取られたら***終わり***です
+  - どういった対策をしたら良いかは「AWSアカウントで最初にやるべきこと」などを検索すると見つかると思います
+
+---
+layout: image
+image: /end_card.png
+class: text-center
+---
+
+
